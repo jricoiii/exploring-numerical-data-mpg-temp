@@ -1,0 +1,124 @@
+City,Date,High,Low
+Sacramento,8/1/2019,92,62
+Sacramento,8/2/2019,98,63
+Sacramento,8/3/2019,102,65
+Sacramento,8/4/2019,99,64
+Sacramento,8/5/2019,98,61
+Sacramento,8/6/2019,101,67
+Sacramento,8/7/2019,94,62
+Sacramento,8/8/2019,86,60
+Sacramento,8/9/2019,91,62
+Sacramento,8/10/2019,87,63
+Sacramento,8/11/2019,92,59
+Sacramento,8/12/2019,98,63
+Sacramento,8/13/2019,101,66
+Sacramento,8/14/2019,105,67
+Sacramento,8/15/2019,107,71
+Sacramento,8/16/2019,105,71
+Sacramento,8/17/2019,91,63
+Sacramento,8/18/2019,88,60
+Sacramento,8/19/2019,88,58
+Sacramento,8/20/2019,90,59
+Sacramento,8/21/2019,98,62
+Sacramento,8/22/2019,99,69
+Sacramento,8/23/2019,100,69
+Sacramento,8/24/2019,100,65
+Sacramento,8/25/2019,103,69
+Sacramento,8/26/2019,103,67
+Sacramento,8/27/2019,102,70
+Sacramento,8/28/2019,91,65
+Sacramento,8/29/2019,89,65
+Sacramento,8/30/2019,94,61
+Sacramento,8/31/2019,99,64
+Fremont,8/1/2019,77,55
+Fremont,8/2/2019,75,59
+Fremont,8/3/2019,82,56
+Fremont,8/5/2019,83,59
+Fremont,8/6/2019,82,57
+Fremont,8/7/2019,79,57
+Fremont,8/8/2019,73,59
+Fremont,8/9/2019,76,57
+Fremont,8/10/2019,77,63
+Fremont,8/11/2019,83,59
+Fremont,8/12/2019,89,57
+Fremont,8/13/2019,89,57
+Fremont,8/14/2019,96,59
+Fremont,8/15/2019,98,62
+Fremont,8/16/2019,96,62
+Fremont,8/17/2019,87,62
+Fremont,8/18/2019,79,58
+Fremont,8/19/2019,78,59
+Fremont,8/20/2019,73,59
+Fremont,8/21/2019,82,57
+Fremont,8/22/2019,85,64
+Fremont,8/23/2019,82,59
+Fremont,8/24/2019,79,59
+Fremont,8/25/2019,83,59
+Fremont,8/26/2019,89,57
+Fremont,8/27/2019,86,58
+Fremont,8/28/2019,84,58
+Fremont,8/29/2019,77,63
+Fremont,8/30/2019,78,57
+Fremont,8/31/2019,87,56
+Santa Barbara,8/1/2019,71,57
+Santa Barbara,8/2/2019,73,56
+Santa Barbara,8/3/2019,73,59
+Santa Barbara,8/4/2019,68,59
+Santa Barbara,8/5/2019,73,58
+Santa Barbara,8/6/2019,70,56
+Santa Barbara,8/7/2019,67,58
+Santa Barbara,8/8/2019,71,55
+Santa Barbara,8/9/2019,70,56
+Santa Barbara,8/10/2019,75,56
+Santa Barbara,8/11/2019,70,57
+Santa Barbara,8/12/2019,70,56
+Santa Barbara,8/13/2019,69,56
+Santa Barbara,8/14/2019,65,56
+Santa Barbara,8/15/2019,67,57
+Santa Barbara,8/16/2019,71,57
+Santa Barbara,8/17/2019,70,57
+Santa Barbara,8/18/2019,70,58
+Santa Barbara,8/19/2019,72,56
+Santa Barbara,8/20/2019,77,55
+Santa Barbara,8/21/2019,75,56
+Santa Barbara,8/22/2019,74,56
+Santa Barbara,8/23/2019,76,60
+Santa Barbara,8/24/2019,74,58
+Santa Barbara,8/25/2019,71,60
+Santa Barbara,8/26/2019,74,61
+Santa Barbara,8/27/2019,73,59
+Santa Barbara,8/28/2019,71,61
+Santa Barbara,8/29/2019,76,60
+Santa Barbara,8/30/2019,76,61
+Santa Barbara,8/31/2019,75,58
+Santa Cruz,8/1/2019,73.7,57.1
+Santa Cruz,8/2/2019,75.6,56.4
+Santa Cruz,8/3/2019,77.8,53.7
+Santa Cruz,8/4/2019,78,56.1
+Santa Cruz,8/5/2019,70.7,55.3
+Santa Cruz,8/6/2019,70.5,56.8
+Santa Cruz,8/7/2019,73.5,57.5
+Santa Cruz,8/8/2019,81,53.1
+Santa Cruz,8/9/2019,83.1,55.7
+Santa Cruz,8/10/2019,82.9,58.4
+Santa Cruz,8/11/2019,78.7,55.8
+Santa Cruz,8/12/2019,84.6,55.9
+Santa Cruz,8/13/2019,83.8,54.8
+Santa Cruz,8/14/2019,86.3,56.3
+Santa Cruz,8/15/2019,83.9,58.1
+Santa Cruz,8/16/2019,68.5,57.8
+Santa Cruz,8/17/2019,65.6,58.6
+Santa Cruz,8/18/2019,67.8,59.8
+Santa Cruz,8/19/2019,72.3,58.8
+Santa Cruz,8/20/2019,78.9,57.4
+Santa Cruz,8/21/2019,82,55.1
+Santa Cruz,8/22/2019,81,62.4
+Santa Cruz,8/23/2019,69.5,59.1
+Santa Cruz,8/24/2019,73.4,59.1
+Santa Cruz,8/25/2019,79.3,59.1
+Santa Cruz,8/26/2019,78.1,55.1
+Santa Cruz,8/27/2019,75,56.4
+Santa Cruz,8/28/2019,71.8,59.5
+Santa Cruz,8/29/2019,81.8,63.2
+Santa Cruz,8/30/2019,83.7,57.1
+Santa Cruz,8/31/2019,83.8,55.5
