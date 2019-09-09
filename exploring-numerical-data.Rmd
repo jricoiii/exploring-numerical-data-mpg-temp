@@ -63,7 +63,80 @@ glimpse(climate)
 
 ## Visual Exploration
 
-View the temperatures for each city in a **dotplot**
+Let's view a variety of visualization of a single numerical variable  
+
+* Fremont's Daily High Temperature for August 2019
+
+### Look at connection between graphs
+Closer look at boxplot connection to histogram
+
+#### Classic Dot Plot
+```{r, echo=F}
+climate %>% 
+  filter(City=="Fremont") %>% 
+  ggplot(aes(High, fill=City)) +
+  geom_dotplot(binwidth=1,stackratio=1.0, dotsize=1)
+```
+
+#### Classic Histogram
+```{r, echo=F}
+p<-climate %>% 
+  filter(City=="Fremont") %>% 
+  ggplot(aes(x=High)) +
+  geom_histogram(binwidth = 1,fill="red",color="white")
+ggplotly(p)
+```
+
+#### Density Curve
+```{r, echo=F}
+p<-climate %>% 
+  filter(City=="Fremont") %>% 
+  ggplot(aes(x=High)) +
+  geom_density( fill="red",color="white")
+ggplotly(p)
+```
+
+##### Boxplot
+```{r, echo=F}
+p<-climate %>% 
+  filter(City=="Fremont") %>% 
+  ggplot(aes(y=High, x=City)) +
+  geom_boxplot(color="red")+
+  coord_flip()
+ggplotly(p)
+```
+
+#### Violin Plot
+```{r, echo=F}
+climate %>% 
+  filter(City=="Fremont") %>% 
+  ggplot(aes(y=High, x=City)) +
+  geom_violin(fill="red",color="white")+
+  coord_flip()
+
+```
+
+##### Boxplot with *jittered* data points
+```{r, echo=F}
+p<-climate %>% 
+  filter(City=="Fremont") %>% 
+  ggplot(aes(y=High, x=City)) +
+  geom_boxplot(color="red")+
+  geom_jitter(width=0.2, alpha=0.5, color="red")+
+  coord_flip()
+ggplotly(p)
+```
+
+#### Dotplot with dots *centered* on axis
+```{r, echo=F}
+climate %>% 
+  filter(City=="Fremont") %>% 
+  ggplot(aes(High, fill=City)) +
+  geom_dotplot(binwidth=1,stackratio=1.0, dotsize=1, stackdir="center")
+```
+
+
+Let's compare the daily high temperatures for four different cities in a **dotplot**
 
 ```{r}
 ggplot(climate, aes(High, fill=City)) +
@@ -131,51 +204,6 @@ p<-ggplot(climate, aes(x= City, y=High, fill=City)) +
   coord_flip()
 p
 ```
-### Look at connection between graphs
-Closer look at boxplot connection to histogram
-```{r, echo=F}
-p<-climate %>% 
-  filter(City=="Fremont") %>% 
-  ggplot(aes(y=High, x=City)) +
-  geom_boxplot(color="red")+
-  geom_jitter(width=0.2, alpha=0.5, color="red")+
-  coord_flip()
-ggplotly(p)
-```
-
-```{r, echo=F}
-p<-climate %>% 
-  filter(City=="Fremont") %>% 
-  ggplot(aes(x=High)) +
-  geom_histogram(binwidth = 1,fill="red",color="white")
-ggplotly(p)
-```
-
-```{r, echo=F}
-p<-climate %>% 
-  filter(City=="Fremont") %>% 
-  ggplot(aes(x=High)) +
-  geom_density( fill="red",color="white")
-ggplotly(p)
-```
-
-```{r, echo=F}
-climate %>% 
-  filter(City=="Fremont") %>% 
-  ggplot(aes(y=High, x=City)) +
-  geom_violin(fill="red",color="white")+
-  coord_flip()
-
-```
-
-```{r, echo=F}
-climate %>% 
-  filter(City=="Fremont") %>% 
-  ggplot(aes(High, fill=City)) +
-  geom_dotplot(binwidth=1,stackratio=1.0, dotsize=1, stackdir="center")
-```
-
-
 
 ## Classic Numerical Summary Statistcs
 
