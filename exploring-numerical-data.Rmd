@@ -74,8 +74,8 @@ Closer look at boxplot connection to histogram
 ```{r, echo=F}
 climate %>% 
   filter(City=="Fremont") %>% 
-  ggplot(aes(High, fill=City)) +
-  geom_dotplot(binwidth=1,stackratio=1.0, dotsize=1)
+  ggplot(aes(High)) +
+  geom_dotplot(binwidth=1,stackratio=1.0, dotsize=1, fill="red")
 ```
 
 #### Classic Histogram
@@ -101,7 +101,7 @@ ggplotly(p)
 p<-climate %>% 
   filter(City=="Fremont") %>% 
   ggplot(aes(y=High, x=City)) +
-  geom_boxplot(color="red")+
+  geom_boxplot(fill="red")+
   coord_flip()
 ggplotly(p)
 ```
@@ -131,11 +131,11 @@ ggplotly(p)
 ```{r, echo=F}
 climate %>% 
   filter(City=="Fremont") %>% 
-  ggplot(aes(High, fill=City)) +
-  geom_dotplot(binwidth=1,stackratio=1.0, dotsize=1, stackdir="center")
+  ggplot(aes(High)) +
+  geom_dotplot(binwidth=1,stackratio=1.0, dotsize=1, stackdir="center", fill="red")
 ```
 
-
+### Comparing groups with summary visualization
 Let's compare the daily high temperatures for four different cities in a **dotplot**
 
 ```{r}
@@ -229,8 +229,6 @@ climate %>%
   map(summary)
 ```
 
-
-### Visualization of Summary Statistics
 
 
 
