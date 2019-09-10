@@ -1,0 +1,26 @@
+---
+title: "P3 - Summary Statistics for Numerical Variables"
+author: "Jose Rico"
+date: "9/10/2019"
+output:
+  html_document:
+    theme: lumen
+    toc: yes
+    toc_float: yes
+    df_print: kable
+---
+
+Choose 2 of the survey questions from the survey that you are interested in exploring the results.
+
+Link to Survey Results - https://docs.google.com/spreadsheets/d/1cvoTnrb1FLaiHcXBEt5q8oG4ZpKp-dc6zaTs6QX253w/edit?usp=sharing
+
+For each question complete the following tasks;
+
+* Create at least 2 visualizations of the distribution
+* Calculate summary statistics
+* Write your own summary describing the distribution
+  + Shape (modalities)
+  + Skew
+  + Center (mean/median)
+  + Outliers
+  + Middle 50%

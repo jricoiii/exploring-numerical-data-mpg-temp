@@ -1,5 +1,5 @@
 ---
-title: "Exploring Numerical Data"
+title: "E3 - Exploring Numerical Data"
 author: "Jose Rico"
 output:
   html_document:
@@ -35,9 +35,11 @@ We will look at two different data sets;
 
 ## Packages Needed
 * `ggplot2` for graphing
-
-Since we are graphing we will need the  package and since we are also 
-data wrangling we wil need the `dplyr` package.  For reading `csv` files, we need `readr` package.  For quick summary we'll use `purrr`. `kable` for producing better looking tables.We will also be creating interactive graphics using the package `plotly`.  
+* `dplyr` for data wrangling
+* `readr` for reading `csv` files
+* `purrr` for quick summaries 
+* `kable` for producing better looking tables.
+* `plotly` for creating interactive graphics  
 
 Library the needed packages
 ```{r, message=F}
@@ -121,8 +123,8 @@ climate %>%
 p<-climate %>% 
   filter(City=="Fremont") %>% 
   ggplot(aes(y=High, x=City)) +
-  geom_boxplot(color="red")+
-  geom_jitter(width=0.2, alpha=0.5, color="red")+
+  geom_boxplot(fill ="red")+
+  geom_jitter(width=0.2, alpha=0.5)+
   coord_flip()
 ggplotly(p)
 ```
