@@ -10,11 +10,26 @@ output:
     df_print: kable
 ---
 
-Choose 2 of the survey questions from the survey that you are interested in exploring the results.
+# Packages Needed to be Loaded with `library` function
+Note: They have already been installed in this project
+```{r, message=F}
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(purrr)
+library(kableExtra)
+library(plotly)
+```
+
+
+
+
+# Assignment Details
+Choose one of the survey questions from the survey that you are interested in exploring the results.
 
 Link to Survey Results - https://docs.google.com/spreadsheets/d/1cvoTnrb1FLaiHcXBEt5q8oG4ZpKp-dc6zaTs6QX253w/edit?usp=sharing
 
-For each question complete the following tasks;
+For the survey question complete the following tasks;
 
 * Create at least 2 visualizations of the distribution
 * Calculate summary statistics
@@ -24,3 +39,28 @@ For each question complete the following tasks;
   + Center (mean/median)
   + Outliers
   + Middle 50%
+* **Exceptional** grade is possible if you break the variable down with a categorical variable
+
+# Load Data
+In order to load data, I suggest the following procedure;  
+
+* Copy the Google sheet, clean up response (so they are numerical) and rename the columns/variable
+(so they are one word, not questions)  
+
+* Publish to Web (under file)  
+
+* Enter link inside the parenthesis
+
+```{r, loading data from Google}
+survey <- read_csv("PUBLISH GOOGLE FILE GOES HERE")
+```
+
+# Question 1 - 
+
+## Visualizations
+
+## Numerical Summary
+
+## Narrative Summary
+
+
