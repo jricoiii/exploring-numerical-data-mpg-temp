@@ -38,7 +38,7 @@ We will look at two different data sets;
 * `dplyr` for data wrangling
 * `readr` for reading `csv` files
 * `purrr` for quick summaries 
-* `kable` for producing better looking tables.
+* `kableExtra` for producing better looking tables.
 * `plotly` for creating interactive graphics  
 
 Library the needed packages
@@ -207,9 +207,22 @@ p<-ggplot(climate, aes(x= City, y=High, fill=City)) +
 p
 ```
 
-## Classic Numerical Summary Statistcs
+## Classic Numerical Summary Statistics
 
-### Using `group_by` and `summarize` functions
+### Simple one line summary 
+Note: Does not break the variable down
+
+```{r}
+summary(climate$High)
+```
+### Using `group_by` and `summarize` functions to obtain a summary statistic (e.g., IQR)
+```{r}
+climate %>% 
+  group_by(City) %>% 
+  summarize(High_IQR=IQR(High))
+```
+
+### Using same structure you can add summary statistics of interest inside `summarize`
 ```{r}
 high_sum <- climate %>% 
   group_by(City) %>% 
